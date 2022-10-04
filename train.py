@@ -20,5 +20,6 @@ python yolov5/train.py --img 640 --batch 16 --epochs 300 --data yolo_poc/tobacco
 # predict folder
 python yolov5/detect.py --source yolov5/tobacco_yolo_format/images/valid/ --weights 'yolov5/runs/train/Tobacco-run/weights/best.pt' --hide-labels --hide-conf --classes 1 --line-thickness 2
 #%%
+
 # predict file
 python yolov5/detect.py --source yolov5/tobacco_yolo_format/images/lithia/img1.jpg --weights 'yolov5/runs/train/Tobacco-run/weights/best.pt' --hide-labels --hide-conf --classes 1 --line-thickness 2
